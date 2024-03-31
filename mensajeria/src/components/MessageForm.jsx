@@ -7,7 +7,7 @@ function MessageForm({ receiverId }) {
 
     const handleSubmit = e => {
         e.preventDefault();
-        axios.post('/messages', { receiver: receiverId, content })
+        axios.post('https://bw3vb6q6-3000.use2.devtunnels.ms/api/messages', { receiver: receiverId, content })
             .then(response => {
                 setContent('');
             })
